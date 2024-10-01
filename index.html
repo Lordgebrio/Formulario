@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cymetria</title>
+    <!-- Link de Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- <style>
+      label {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+      input[type='radio'] {
+        margin-right: 10px;
+      }
+      button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style> -->
+  </head>
+  <body>
+    <form action="/enviar" method="post">
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Nombre Completo"
+        required
+      />
+      <br />
+      <label for="email">Correo Electrónico:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required placeholder="correo@example.com"
+        required
+      />
+      <br />
+      <label for="telefono">Teléfono:</label>
+      <input
+        type="tel"
+        name="telefono"
+        id="inputTelefono"
+        placeholder="Teléfono"
+        required
+      />
+      <br />
+      <div class="pais-city">
+        <div class="pais">
+          <label for="pais">País:</label>
+          <label for="colombia"><input type="radio" name="colombia" id="colombia" required />
+            Colombia</label
+          ><hr>
+        </div>
+        <label for="Ciudad">Ciudad</label>
+        <div class="city">
+          <br />
+          <label>
+            <input type="checkbox" name="ciudad" value="Bogota" />
+            Bogota </label
+          ><br />
+          <label>
+            <input type="checkbox" name="ciudad" value="Barranquilla" />
+            Barranquilla </label
+          ><br />
+          <label>
+            <input type="checkbox" name="ciudad" value="Bucaramanga" />
+            Bucaramanga </label
+          ><br />
+          <label>
+            <input type="checkbox" name="ciudad" value="Cali" /> Cali </label
+          ><br />
+          <label>
+            <input type="checkbox" name="ciudad" value="Medellin" />
+            Medellin </label
+          ><br />
+        </div>
+      </div>
+      <label for="observaciones">Observaciones:</label>
+      <textarea
+        name="observaciones"
+        id="observaciones"
+        placeholder="Observaciones"
+      ></textarea>
+      <button type="submit">Enviar</button>
+
+      <form action="/enviar" method="post"></form>
+    </form>
+  </body>
+</html>
